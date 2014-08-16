@@ -13,7 +13,7 @@ module Lita
         response.matches.first.each do |c|
           s += @@art.asciify(c)
         end
-        response.reply s
+        response.reply "```#{s}```" 
       end
     end
 
